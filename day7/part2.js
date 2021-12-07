@@ -21,7 +21,7 @@ const createArray = (width, height, initialValue = null) => {
     return array;
 }
 
-let max = input.reduce((max,a) => a > max ? a : max);
+const max =  Math.max(...input)
 
 const matrix = createArray(input.length,max+1);
 
